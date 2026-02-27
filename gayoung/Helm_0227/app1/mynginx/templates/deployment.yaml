@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      annotations:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: "{{ .Values.image.repository }}:{{ .Values.image.ta }}"
+          ports:
+          - containerPort: 80

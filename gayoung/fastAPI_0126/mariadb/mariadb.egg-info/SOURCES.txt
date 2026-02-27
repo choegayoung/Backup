@@ -1,0 +1,7 @@
+README.md
+main.py
+pyproject.toml
+mariadb.egg-info/PKG-INFO
+mariadb.egg-info/SOURCES.txt
+mariadb.egg-info/dependency_links.txt
+mariadb.egg-info/top_level.txt
